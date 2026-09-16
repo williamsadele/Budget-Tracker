@@ -1,0 +1,200 @@
+  * {
+    box-sizing: border-box;
+  }
+ 
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f4f6f8;
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0;
+    line-height: 1.5;
+  }
+ 
+  .container {
+    width: 100%;
+    max-width: 420px;
+  }
+ 
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+  }
+ 
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #6b7684;
+    margin: 32px 0 12px;
+  }
+ 
+  .balance-container {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px 24px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+ 
+  .balance-container h3 {
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+ 
+  #balance {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    letter-spacing: -0.5px;
+  }
+ 
+  .inc-exp-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    border-top: 1px solid #edf0f3;
+    padding-top: 18px;
+  }
+ 
+  .inc-exp-container > div {
+    flex: 1;
+  }
+ 
+  .inc-exp-container h4 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #8a94a3;
+    margin: 0 0 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+ 
+  .money {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+ 
+  .money.plus {
+    color: #1fa971;
+  }
+ 
+  .money.minus {
+    color: #e0563f;
+  }
+ 
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+ 
+  .list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border-bottom: 1px solid #edf0f3;
+    font-size: 15px;
+  }
+ 
+  .list li:last-child {
+    border-bottom: none;
+  }
+ 
+  .list li.plus {
+    border-left: 4px solid #1fa971;
+  }
+ 
+  .list li.minus {
+    border-left: 4px solid #e0563f;
+  }
+ 
+  .list li .delete-btn {
+    background: #e0563f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    width: 22px;
+    height: 22px;
+    line-height: 1;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 13px;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+ 
+  .list li:hover .delete-btn {
+    opacity: 1;
+  }
+ 
+  .list li .item-amount {
+    margin-left: auto;
+    font-weight: 600;
+  }
+ 
+  #form {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+ 
+  .form-control {
+    margin-bottom: 16px;
+  }
+ 
+  .form-control:last-of-type {
+    margin-bottom: 20px;
+  }
+ 
+  label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #6b7684;
+    margin-bottom: 6px;
+  }
+ 
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #dde2e8;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.15s ease;
+  }
+ 
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    border-color: #4a7cf6;
+  }
+ 
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+ 
+  .btn:hover {
+    background: #1f2c38;
+  }
