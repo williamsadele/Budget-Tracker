@@ -4,7 +4,7 @@ const moneyExpense = document.getElementById("money-minus");
 const inputText = document.getElementById("text");
 const inputAmount = document.getElementById("amount");
 const form = document.getElementById("form");
-const hitsoryEl = document.getElementById("list");
+const historyEl = document.getElementById("list");
 let transactions = []
 
 form.addEventListener("submit", addTransaction)
@@ -21,7 +21,8 @@ function addTransaction(event) {
     }
     transactions.push(transaction)
     render()
-    inputText = ""; inputAmount = ""
+    inputText.value = ""
+    inputAmount.value = ""
 }
 function render () {
     let entry = ""
